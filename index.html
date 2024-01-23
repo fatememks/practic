@@ -19,12 +19,12 @@
             <nav class="flex flex-row items-center justify-between w-full py-2 px-5 xl:max-w-screen-xl">
                 <div class="flex flex-row gap-7 items-center justify-center">
                     <a href="" class="hover:text-gray-200">VUE NOTUS</a>
-                    <a href="" class="flex flex-row items-center justify-center gap-1 hover:text-gray-200">
+                    <a href="" class="hidden sm:flex flex-row items-center justify-center gap-1 hover:text-gray-200">
                         <i class="fa-regular fa-file-lines"></i>
                         <span>DOCS</span>
                     </a>
                 </div>
-                <div class="flex flex-row gap-5 items-center justify-center">
+                <div class="hidden sm:flex flex-row gap-5 items-center justify-center">
                     <a href="" class="hover:text-gray-200">DEMO PAGE</a>
                     <i class="fa-brands fa-facebook hover:text-gray-200"></i>
                     <i class="fa-brands fa-twitter hover:text-gray-200"></i>
@@ -34,12 +34,13 @@
                         <span>DOWNLOAD</span>
                     </button>
                 </div>
+
             </nav>
         </div>
    </header>
    <div class="flex flex-row items-center justify-center -translate-y-1/4 p-10 shaddow-xl">
         <div class="xl:max-w-screen-xl container bg-gray-50 w-full flex flex-col items-center gap-8 rounded-xl">
-            <div class="flex flex-row items-center justify-around w-full">
+            <div class="hidden sm:flex flex-row items-center justify-around w-full">
                 <div class="flex flex-row items-center justify-center gap-5">
                     <div class="flex flex-col gap-2 items-center justify-center">
                         <span class="text-xl font-semibold text-stone-700">22</span>
@@ -60,6 +61,30 @@
                 <div class="mr-5">
                     <button class="bg-green-600 hover:bg-green-700 text-gray-50 font-semibold text-sm px-5 py-2 rounded">CONNECT</button>
                 </div>
+            </div>
+            <div class="flex flex-col items-center justify-center sm:hidden">
+                <div class="rounded-full overflow-hidden -translate-y-1/2 shaddow">
+                    <img src="./image/stones.jpg" alt="" class="h-52 w-full">
+                </div>
+                <div class="flex flex-row items-center justify-center gap-10">
+                    <div class="flex flex-row items-center justify-center gap-5">
+                        <div class="flex flex-col gap-2 items-center justify-center">
+                            <span class="text-xl font-semibold text-stone-700">22</span>
+                            <span class="text-sm text-stone-600">Friends</span>
+                        </div>
+                        <div class="flex flex-col gap-2 items-center justify-center">
+                            <span class="text-xl font-semibold text-stone-700">10</span>
+                            <span class="text-sm text-stone-600">Photos</span>
+                        </div>
+                        <div class="flex flex-col gap-2 items-center justify-center">
+                            <span class="text-xl font-semibold text-stone-700">89</span>
+                            <span class="text-sm text-stone-600">Comments</span>
+                        </div>
+                    </div>
+                    <div>
+                        <button class="bg-green-600 hover:bg-green-700 text-gray-50 font-semibold text-sm px-5 py-2 rounded">CONNECT</button>
+                    </div>
+                </div>  
             </div>
             <div class="flex flex-col items-center justify-center w-full p-10">
                 <div class="flex flex-col items-center gap-10 text-gray-500 font-semibold  w-full">
@@ -87,5 +112,34 @@
             </div>
         </div>
    </div>
+   <footer class="flex flex-col items-center justify-center gap-5 xl:max-w-screen-xl mx-auto w-full p-10 text-stone-800/90">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-10 py-5 border-b border-stone-400">
+            <div class="col-span-2 flex flex-col gap-5">
+                <h4 class="text-4xl font-semibold">Let's keep in touch!</h4>
+                <h5>Find us on any of these platforms, we respond 1-2 business days.</h5>
+            </div>
+            <div class="col-span-1 flex flex-row gap-14 items-center justify-center font-semibold">
+                <div class="flex flex-col gap-2">
+                    <p class="text-md">USEFUL LINKS</p>
+                    <ul class="text-sm flex flex-col gap-2">
+                        <li class="text-stone-600 hover:text-stone-700">About Us</li>
+                        <li class="text-stone-600 hover:text-stone-700">Blog</li>
+                        <li class="text-stone-600 hover:text-stone-700">Github</li>
+                        <li class="text-stone-600 hover:text-stone-700">Free Products</li>
+                    </ul>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <p class="text-md">OTHER RESOURCES</p>
+                    <ul class="text-sm flex flex-col gap-2">
+                        <li class="text-stone-600 hover:text-stone-700">MIT License</li>
+                        <li class="text-stone-600 hover:text-stone-700">Terms & Conditions</li>
+                        <li class="text-stone-600 hover:text-stone-700">Privacy Policy</li>
+                        <li class="text-stone-600 hover:text-stone-700">Contact Us</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <p class="font-semibold text-sm">Copyright © 2024 Vue Notus by Creative Tim .</p>
+   </footer>
 </body>
 </html>
